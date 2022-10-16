@@ -1,7 +1,8 @@
 # Test Automation Mobile
 
 > Realizar la automatización de la creación, actualización y eliminado de una tarea de la aplicación When.do
-
+> 
+![](src/resources/whenDo.png)
 # 👨‍💻 Stack Tecnológico
 
 Para el presente proyecto se utilizó:
