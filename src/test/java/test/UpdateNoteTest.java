@@ -28,7 +28,7 @@ public class UpdateNoteTest {
         createNoteForm.noteTxtBox.setText(note);
         createNoteForm.saveButton.click();
 
-        updateNoteForm.selectedNote(title);
+        mainScreen.selectedNote(title);
         updateNoteForm.titleTxtBox.setText(updateTitle);
         updateNoteForm.noteTxtBox.setText(updateNote);
         updateNoteForm.saveButton.click();

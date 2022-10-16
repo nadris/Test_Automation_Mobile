@@ -10,8 +10,4 @@ public class UpdateNoteForm {
     public TextBox noteTxtBox= new TextBox(By.id("com.vrproductiveapps.whendo:id/noteTextNotes"));
     public Button saveButton = new Button(By.id("com.vrproductiveapps.whendo:id/saveItem"));
 
-    public void selectedNote(String title){
-        Button selectedNote= new Button(By.xpath("//android.widget.TextView[@text='"+title+"']"));
-        selectedNote.click();
-    }
 }

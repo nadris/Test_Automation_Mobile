@@ -22,7 +22,7 @@ public class DeleteNoteTest {
         createNoteForm.noteTxtBox.setText(note);
         createNoteForm.saveButton.click();
 
-        deleteNoteForm.selectedNote(title);
+        mainScreen.selectedNote(title);
         deleteNoteForm.deleteButton.click();
         deleteNoteForm.confirmDeleteButton.click();
         Assertions.assertTrue(mainScreen.isNoteNotDisplayed(title),"ERROR, the note was not deleted");
