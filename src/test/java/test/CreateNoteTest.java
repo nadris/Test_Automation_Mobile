@@ -13,16 +13,15 @@ public class CreateNoteTest {
 
     @Test
     public void verifyCreateNewNote(){
-        String title="Nueva Nota Mobile Test";
-        String note="MI nueva Nota";
+        String title="Nueva Nota I";
+        String note="Mi nueva Nota I";
 
         mainScreen.addNoteButton.click();
         createNoteForm.titleTxtBox.setText(title);
         createNoteForm.noteTxtBox.setText(note);
         createNoteForm.saveButton.click();
 
-        Assertions.assertTrue(mainScreen.isNoteDisplayed(title),
-                "ERROR, the note was not created");
+        Assertions.assertTrue(mainScreen.isNoteDisplayed(title), "ERROR, the note was not created");
 
     }
 

@@ -16,5 +16,10 @@ public class MainScreen {
         return note.isControlDisplayed();
     }
 
+    public boolean isNoteNotDisplayed(String title){
+        Label note= new Label(By.xpath("//android.widget.TextView[@text='"+title+"']"));
+        return note.isControlNotDisplayed();
+    }
+
 
 }

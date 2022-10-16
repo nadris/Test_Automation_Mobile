@@ -36,4 +36,16 @@ public class AppiumControl {
         }
     }
 
+    public boolean isControlNotDisplayed(){
+        try {
+            this.findControl();
+            if(this.control.isDisplayed()){
+                return false;
+            }
+            return false;
+        }catch (Exception e){
+            return true;
+        }
+    }
+
 }

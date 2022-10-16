@@ -13,12 +13,12 @@ public class Android implements IDevice{
     @Override
     public AppiumDriver create() {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("deviceName","Cato");
-        capabilities.setCapability("platformVersion","9");
+        capabilities.setCapability("deviceName","MiA2");
+        capabilities.setCapability("platformVersion","10");
         capabilities.setCapability("appPackage","com.vrproductiveapps.whendo");
         capabilities.setCapability("appActivity","com.vrproductiveapps.whendo.ui.HomeActivity");
-
         capabilities.setCapability("platformName","Android");
+
         AppiumDriver driver= null;
         try {
             driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
