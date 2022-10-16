@@ -3,6 +3,7 @@ import activity.whenDo.CreateNoteForm;
 import activity.whenDo.MainScreen;
 import activity.whenDo.DeleteNoteForm;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 public class DeleteNoteTest {
@@ -10,6 +11,7 @@ public class DeleteNoteTest {
     CreateNoteForm createNoteForm = new CreateNoteForm();
     DeleteNoteForm deleteNoteForm = new DeleteNoteForm();
     @Test
+    @Tag("deleteNote")
     public void verifyDeleteNote(){
 
         String title="Nueva Nota III";

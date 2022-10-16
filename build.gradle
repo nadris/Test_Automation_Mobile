@@ -18,5 +18,7 @@ dependencies {
 }
 
 test {
-    useJUnitPlatform()
+    useJUnitPlatform{
+        includeTags'createNote', 'deleteNote', 'updateNote'
+    }
 }

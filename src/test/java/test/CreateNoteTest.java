@@ -4,6 +4,7 @@ import activity.whenDo.CreateNoteForm;
 import activity.whenDo.MainScreen;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import singletonSession.Session;
 
@@ -12,6 +13,7 @@ public class CreateNoteTest {
     CreateNoteForm createNoteForm = new CreateNoteForm();
 
     @Test
+    @Tag("createNote")
     public void verifyCreateNewNote(){
         String title="Nueva Nota I";
         String note="Mi nueva Nota I";
@@ -23,11 +25,6 @@ public class CreateNoteTest {
 
         Assertions.assertTrue(mainScreen.isNoteDisplayed(title), "ERROR, the note was not created");
 
-    }
-
-    @AfterEach
-    public void closeApp(){
-        Session.getInstance().closeApp();
     }
 
 

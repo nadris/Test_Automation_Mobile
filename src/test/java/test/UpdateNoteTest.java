@@ -3,8 +3,11 @@ package test;
 import activity.whenDo.CreateNoteForm;
 import activity.whenDo.MainScreen;
 import activity.whenDo.UpdateNoteForm;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import singletonSession.Session;
 
 public class UpdateNoteTest {
 
@@ -12,6 +15,7 @@ public class UpdateNoteTest {
     CreateNoteForm createNoteForm = new CreateNoteForm();
     UpdateNoteForm updateNoteForm = new UpdateNoteForm();
     @Test
+    @Tag("updateNote")
     public void verifyUpdateNote(){
         String title="Nueva Nota II";
         String note="Mi nueva Nota II";
@@ -32,4 +36,10 @@ public class UpdateNoteTest {
         Assertions.assertTrue(mainScreen.isNoteDisplayed(updateTitle), "ERROR, the note was not updated");
 
     }
+
+    @AfterEach
+    public void closeApp(){
+        Session.getInstance().closeApp();
+    }
+
 }
