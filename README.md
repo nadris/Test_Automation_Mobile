@@ -1,6 +1,6 @@
 # Test Automation Mobile
 
-> Realizar la automatización de la creación,actualización y borrado de una tarea de la aplicación When.do
+> Realizar la automatización de la creación, actualización y borrado de una tarea de la aplicación When.do
 
 # 👨‍💻 Stack Tecnológico
 
